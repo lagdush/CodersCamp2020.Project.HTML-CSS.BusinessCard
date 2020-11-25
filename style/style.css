@@ -1,0 +1,69 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+/* zmienne z kolorami */
+.root{
+
+}
+
+.wrapper {
+   max-width: 1920px;
+   margin: 0 auto;
+}
+
+header{
+   width: 100%;
+   height: 90vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+.header_title{
+   position: relative;
+   display: inline-block;
+   font-size: 80px;
+   margin: 40px;
+   font-family: monospace;
+   /* overflow: hidden; */
+}
+.header_title::after{
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: white;
+   border-left: 3px solid #222;
+   animation: cursor .8s infinite linear, typing 3s 2s steps(20) forwards;
+}
+@keyframes cursor {
+0%{
+   border-color: transparent;
+}
+10%{
+   border-color: #222;
+}
+25%{
+   border-color: #222;
+}
+75%{
+   border-color: #222;
+}
+90%{
+   border-color: #222;
+}
+100%{
+   border-color: transparent;
+}
+}
+@keyframes typing{
+   100% {
+      left: 100%;
+   }
+}
