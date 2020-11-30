@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap');
 
 
 /* font-family: 'DM Serif Display', serif;
@@ -39,10 +39,13 @@ body {
 }
 .header__title--typing,
 .header__title {
-   font-family: 'DM Serif Display', serif;
+   font-family: 'Lato', sans-serif;
    color: white;
    font-size: 7rem;
    text-transform: uppercase;
+}
+.header__title{
+   color: var(--myDarkBlue);
 }
 .header__title{
    align-self: start;
@@ -137,8 +140,8 @@ border-radius: 16px;
    position: fixed;
    right:0;
    bottom:10%;
-   width: 9.375rem;
-   height: 18.75rem;
+   width: 10%;
+   height: 35%;
    background-color: rgba(15,17,64,0.9);
 }
 .socials__list{
@@ -165,10 +168,6 @@ border-radius: 16px;
 .navigation__list{
    height: 6rem;
    justify-content: space-around;
-}
-.header__socials {
-   width: 7.375rem;
-   height: 16.75rem;
 }
 }
 
