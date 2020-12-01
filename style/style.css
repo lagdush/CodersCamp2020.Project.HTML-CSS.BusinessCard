@@ -5,10 +5,6 @@
    margin: 0;
    box-sizing: border-box;
 }
-
-body {
-   height: 400vh;
-}
 /* zmienne z kolorami */
 :root{
    --myYellow: #F2D027;
@@ -16,6 +12,7 @@ body {
    --myDarkBlue: #0F1140;
    font-family: 'Roboto Mono', monospace;
    font-size: 16px;
+   /* scroll-behavior: smooth; */
 }
 
 .wrapper {
@@ -100,6 +97,7 @@ body {
    font-size: 2rem;
    color: var(--myBlack);
    background-color: #fff;
+   z-index: 1;
 }
 .navigation__list{
    height: 6rem;
@@ -284,116 +282,102 @@ border-radius: 16px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* dodane ze stronki którą robiłem luk-spy, OGARNIJ TO */
-/* .contact{
-   height: 60vh;
-   width:1280px;
-   margin: 0 auto 100px auto;
-   border: 2px solid #F25C05;
-   border-radius: 50px;
-   display: flex;
-   justify-content: space-between;
+/* main content */
+.content__container{
+   width: 85vw;
+   height: auto;
+   margin-left: 5rem;
+   margin-top: 20rem;
 }
-
-.contact form{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-evenly;
-   align-items: center;
-   flex-grow: 1;
+.about__container{
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(6, 1fr);
+grid-template-areas: 'title title title . . .'
+                     'title title title . . .'
+                     'text text text image image image'
+                     'text text text image image image'
+                     'text text text image image image'
+                     'text text text image image image';
+gap: 30px;
 }
-
-form>*{
-   width:70%;
-   padding: 20px;
-   border: 2px solid #eee;
-   outline-color: #F25C05;
-   resize: none;
+.header__container--title,
+.about__container--text{
+   color: var(--myBlack);
 }
 
 
-.contact .send{
-   width:30%;
-   border: 3px solid #eee;
-   border-radius: 10px;
-   background-color: white;
-   font-size: 20px;
-   color: #F25C05;
-   cursor: pointer;
+.header__container--title::before{
+   content: '';
+   position: absolute;
+   top: -20%;
+   left: -7%;
+   width: 80%;
+   height: 70% ;
+   background-color: var(--myYellow);
+   z-index: -1;
 }
-
-
-.contact .icons{
-   padding: 20px;
-   height:100%;
-   flex-basis: 50%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+.header__container--title{
+   grid-area: title;
+   position:relative;
+   font-size: 4rem;
 }
-.socials>*{
-   cursor: pointer;
-}
-.socials{
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   font-size: 70px;
-   color: black;
-}
-
-.adres{
-   align-self: flex-end;
-   width: 100%;
-   height:80%;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
-   flex-wrap: wrap;
-}
-.wrap-adres{
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
-   width:100%;
-   height:33%;
-   font-size: 25px;
-   color: black;
-   letter-spacing: 2px;
-}
-.adres i{
-   display: block;
-   font-size: 30px;
-   margin: 20px;
-   color: #F25C05;
-} */
-
-/* stopka */
-
-/* footer{
-   height:100px;
-   width: 100%;
-   font-size: 1.5rem;
-   background-color: var(--myDarkBlue);
-   color: white;
-   text-align: center;
-   line-height: 100px;
+.about__container--text{
+   grid-area: text;
    position: relative;
-   bottom: 0;
-} */
+   text-align: justify;
+   font-size: 1.125rem;
+   line-height: 155%;
+}
+.about__container--text::before{
+   content: '';
+   position: absolute;
+   top: 60%;
+   right: 10%;
+   width: 30%;
+   height: 100vh;
+   background-color: var(--myYellow);
+   z-index: -1;
+}
+
+.about__container--image{
+   width: 40vw;
+   height: auto;
+   grid-area: image;
+}
+
+/* technology */
+.about__technology{
+
+   margin-top: 10rem;
+   /* width: 85vw; */
+   height: 50vh;
+   display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(4, 1fr);
+grid-template-areas: ' . . . .'
+                     ' . text text .'
+                     ' . ico ico ico'
+                     ' . . . .';
+align-items: center;
+background-color: var(--myDarkBlue);
+}
+.about__technology--text{
+   grid-area: text;
+   font-size: 2.5rem;
+   color: var(--myYellow);
+}
+
+.about__technology--ico{
+   grid-area: ico;
+   align-self: baseline;
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-evenly;
+   align-items: center;
+   list-style: none;
+}
+.technology--icons{
+   font-size: 6rem;
+   color: var(--myYellow)
+}
