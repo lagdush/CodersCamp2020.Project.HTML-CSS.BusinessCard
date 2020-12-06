@@ -12,12 +12,13 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class='wrapper'>
         <header class=header__container>
             <nav class='header__navigation'>
                 <ul class='navigation__list'>
                     <li class='navigation__list-element'><a class='navigation__link' href="#about">O mnie</a></li>
-                    <li class='navigation__list-element'><a class='navigation__link' href="#">Portfolio</a></li>
+                    <li class='navigation__list-element'><a class='navigation__link' href="#portfolio">Portfolio</a>
+                    </li>
                     <li class='navigation__list-element'><a class='navigation__link' href="#">Kontakt</a></li>
                 </ul>
             </nav>
@@ -34,10 +35,10 @@
                 </ul>
             </div>
         </header>
-        <main  class='content__container'>
-            <section id='about'class='about'>
-                <article class="about__container">
-                    <h1 class="header__container--title">Cześć, jestem Łukasz</h1>
+        <main class='content__container'>
+            <section id='about' class='about'>
+                <article class='about__container'>
+                    <h1 class='header__container--title'>Cześć, jestem Łukasz</h1>
                     <p class='about__container--text'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam
                         atque fuga inventore aliquam consequuntur iure sint ipsam voluptatum facere, voluptatem enim qui
                         eum earum quae optio perspiciatis assumenda aspernatur quasi omnis? Consectetur cumque
@@ -47,19 +48,44 @@
                         beatae dolore nam, facere ea nihil totam ullam eos sint alias deleniti rem. Iusto distinctio cum
                         doloribus explicabo praesentium eum quaerat natus amet! Nemo odio vitae aliquid illo fugit
                         perspiciatis temporibus illum.</p>
-                    <img class="about__container--image" src="./img/main_img_desktop.jpg" alt="Mężczyzna przy pracy">
+                    <img class='about__container--image' src="./img/main_img_desktop.jpg" alt='Mężczyzna przy pracy'>
                 </article>
-                <article class="about__technology">
+                <article class='about__technology'>
                     <p class='about__technology--text'>Technologie jakich używam w pracy</p>
-                    <ul class="about__technology--ico">
-                        <li class='technology--icons'><i class="fab fa-html5"></i></li>
-                        <li class='technology--icons'><i class="fab fa-css3-alt"></i></li>
-                        <li class='technology--icons'><i class="fab fa-js-square"></i></li>
-                        <li class='technology--icons'><i class="fab fa-react"></i></li>
+                    <ul class='about__technology--ico'>
+                        <li class='technology--icons'><i class='fab fa-html5'></i></li>
+                        <li class='technology--icons'><i class='fab fa-css3-alt'></i></li>
+                        <li class='technology--icons'><i class='fab fa-js-square'></i></li>
+                        <li class='technology--icons'><i class='fab fa-react'></i></li>
                     </ul>
                 </article>
             </section>
+            <section id='portfolio' class='porftolio'>
+                <p class='portfolio__text'>Tutaj możesz obejrzeć moje prace</p>
+                <div class='portfolio__photo portfolio__photo--big1'> <a href='#'' class=' portfolio__photo--link'>Lorem
+                        ipsum</a> </div>
+                <div class='portfolio__photo portfolio__photo--long1'> <a href='#' class='portfolio__photo--link'>Lorem
+                        ipsum</a> </div>
+                <div class='portfolio__photo portfolio__photo--big2'> <a href='#' class='portfolio__photo--link'>Lorem
+                        ipsum</a> </div>
+                <div class='portfolio__photo portfolio__photo--long2'> <a href='#'' class='
+                        portfolio__photo--link'>Lorem ipsum</a> </div>
+            </section>
+            <section id='contact' class="contact">
+                <h2 class="contact__header">Zapraszam do kontaktu</h2>
+                <form class="contact__container" action=''>
+                    <input class='contact__customerData' type='text' placeholder='Imię'>
+                    <input class='contact__customerData' type='text' placeholder='Temat'>
+                    <input class='contact__customerData' type='text' placeholder='e-mail' type='email'>
+                    <textarea class='contact__customer__message' name='' id='' cols='30' rows='10'
+                        placeholder='Wpisz swoją wiadomość'></textarea>
+                    <button type='submit' class='contact__send'>Wyślij</button>
+                </form>
+            </section>
         </main>
+        <footer class="footer">
+            <p>&copy; Łukasz Żurawski</p>
+        </footer>
     </div>
 </body>
 
