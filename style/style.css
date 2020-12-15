@@ -150,8 +150,11 @@ border-radius: 16px;
    margin: 1rem;
    font-size: 2rem;
    color: var(--myYellow);
+   transition: .3s;
 }
-
+.socials--ico:hover{
+   font-size: 2.3rem;
+}
 
 /* MEDIA QUERRIE */
 @media (max-width: 1280px){
@@ -467,8 +470,8 @@ background-color: var(--myDarkBlue);
 /* FORM */
 
 .contact{
-   margin-top: 10rem;
-   max-height: 150vh;
+   margin-top: 5rem;
+   min-height: 50vh;
    background-color: var(--myYellow);
    border-radius: 20px;
    margin-bottom: 4rem;
@@ -480,12 +483,12 @@ background-color: var(--myDarkBlue);
 }
 .contact__container{
    display: flex;
+   flex-direction: column;
    flex-wrap: wrap;
    justify-content: center;
    align-content: center;
 }
 .contact__customerData{
-   align-self: baseline;
    width: 50%;
    margin: 2rem 0 2rem 2rem;
    font-size: 1rem;
@@ -502,9 +505,9 @@ background-color: var(--myDarkBlue);
    color: var(--myBlack);
    border: none;
    text-align: center;
+   flex-grow: 2;
 }
 .contact__send{
-   position: relative;
    align-self: center;
    width: 20%;
    margin: 2rem 2rem 2rem 0;
