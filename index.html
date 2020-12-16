@@ -22,7 +22,11 @@
                     <li class='navigation__list-element'><a class='navigation__link' href="#contact">Kontakt</a></li>
                 </ul>
             </nav>
-            <p class='header__title--typing'>Design</p>
+            <p class='animation__container'>
+                <span class='header__title--typing'>Design</span>
+                <!-- <span class='header__title--alternate'>Pomysł</span>
+                <span class='header__title--alternate2'>Biznes</span> -->
+            </p>
             <p class='header__title'>Ma znaczenie</p>
             <div class='header__socials'>
                 <ul class='socials__list'>
@@ -51,7 +55,7 @@
                     <img class='about__container--image' src="./img/main_img_desktop.jpg" alt='Mężczyzna przy pracy'>
                 </article>
                 <article class='about__technology'>
-                    <p class='about__technology--text'>Technologie jakich używam w pracy</p>
+                    <p class='about__technology--text'>Technologie jakich używam</p>
                     <ul class='about__technology--ico'>
                         <li class='technology--icons'><i class='fab fa-html5'></i></li>
                         <li class='technology--icons'><i class='fab fa-css3-alt'></i></li>
@@ -71,20 +75,20 @@
                 <div class='portfolio__photo portfolio__photo--long2'> <a href='#'' class='
                         portfolio__photo--link'>Lorem ipsum</a> </div>
             </section>
-            <section id='contact' class="contact">
-                <h2 class="contact__header">Zapraszam do kontaktu</h2>
-                <form class="contact__container" action=''>
-                    <div class="input__wraper">
-                        <input class='contact__customerData' type='text' placeholder='Imię'>
-                        <input class='contact__customerData' type='text' placeholder='Temat'>
-                        <input class='contact__customerData' type='email' placeholder='e-mail'>
-                    </div>
+        </main>
+        <section id='contact' class="contact__container">
+            <h2 class="contact__header">Zapraszam do kontaktu</h2>
+            <form class="form__container" action=''>
+                <div class="input__wraper">
+                    <input class='contact__customerData' type='text' placeholder='Imię' required>
+                    <input class='contact__customerData' type='text' placeholder='Temat' required>
+                    <input class='contact__customerData' type='email' placeholder='e-mail' required>
                     <textarea class='contact__customer__message' name='' id='' cols='30' rows='10'
                         placeholder='Wpisz swoją wiadomość'></textarea>
-                    <button type='submit' class='contact__send'>Wyślij</button>
-                </form>
-            </section>
-        </main>
+                </div>
+                <button type='submit' class='contact__send'>Wyślij</button>
+            </form>
+        </section>
         <footer class="footer">
             <p>&copy; Łukasz Żurawski</p>
         </footer>
