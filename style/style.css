@@ -359,7 +359,7 @@ background-color: var(--myDarkBlue);
 .portfolio__photo--long1:hover,
 .portfolio__photo--big2:hover,
 .portfolio__photo--long2:hover{
-   transform: scale(1.1);
+   transform: scale(1.2);
    border-width: 10px;
 }
 .portfolio__photo--big1:hover .portfolio__photo--link::after,
@@ -447,7 +447,6 @@ background-color: var(--myDarkBlue);
    font-size: 1rem;
    line-height: 10vh;
 }
-
 
 @media (prefers-color-scheme: dark) {
    :root{
@@ -567,6 +566,9 @@ filter: brightness(.8) contrast(1.2);
             grid-row: 1/2;
             font-size: 3rem;
          }
+         .portfolio__photo{
+            border: none;
+         }
          .portfolio__photo--big1{
             grid-column:1/-1;
             grid-row: 2/6;
@@ -593,8 +595,8 @@ filter: brightness(.8) contrast(1.2);
    .portfolio__photo--long1:hover,
    .portfolio__photo--big2:hover,
    .portfolio__photo--long2:hover{
-   transform: scale(.9);
-   z-index: 1;
+   transform: none;
+   filter: blur(2px);
 }
    }
 @media (orientation: portrait) and (max-width: 768px) {
@@ -818,6 +820,13 @@ filter: brightness(.8) contrast(1.2);
                                  ' ico ico ico ico'
                                  ' ico ico ico ico';
             }
+            .portfolio__photo--big1:hover,
+   .portfolio__photo--long1:hover,
+   .portfolio__photo--big2:hover,
+   .portfolio__photo--long2:hover{
+   transform: none;
+   filter: blur(2px);
+}
    }
 @media (orientation: landscape) and (max-width: 667px){
       .content__container{
