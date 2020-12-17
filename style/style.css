@@ -305,6 +305,7 @@ background-color: var(--myDarkBlue);
    background-position: center center;
    background-repeat: no-repeat;
    transition: all .3s;
+
 }
 
 .portfolio__photo--link{
@@ -318,6 +319,8 @@ background-color: var(--myDarkBlue);
    color: var(--myBlack);
    text-align: center;
    overflow: hidden;
+   transition: .3s;
+   cursor: pointer;
 }
 .portfolio__photo--link::after{
    position: absolute;
@@ -354,7 +357,10 @@ background-color: var(--myDarkBlue);
    background-image: url('../img/portfolio_img_5.jpg');
 }
 
-
+.portfolio__photo--link:hover{
+   color: var(--myYellow);
+background-color: var(--myDarkBlue);
+}
 .portfolio__photo--big1:hover,
 .portfolio__photo--long1:hover,
 .portfolio__photo--big2:hover,
@@ -555,21 +561,21 @@ filter: brightness(.8) contrast(1.2);
                               'text text text text text text'
                               'text text text text text text';
          }
-         .about__technology{
+      .about__technology{
          grid-template-areas: ' . . . .'
                               ' text text text text'
                               ' ico ico ico ico'
                               ' . . . .';
          }
-         .portfolio__text{
+      .portfolio__text{
             grid-column: 1/-1;
             grid-row: 1/2;
             font-size: 3rem;
          }
-         .portfolio__photo{
+      .portfolio__photo{
             border: none;
          }
-         .portfolio__photo--big1{
+      .portfolio__photo--big1{
             grid-column:1/-1;
             grid-row: 2/6;
          }
