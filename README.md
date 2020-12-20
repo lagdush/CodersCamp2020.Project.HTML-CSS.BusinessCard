@@ -1,9 +1,11 @@
 # CodersCamp 2020 - Projekt HTML & CSS
 
 ## Projekt HTML & CSS — Wizytówka / Portfolio
-Celem projektu jest prezentacja umiejętności w pisaniu kodu html oraz CSS po pierwszym module __CodersCamp2020__
+
+Celem projektu jest prezentacja umiejętności w pisaniu kodu html oraz CSS po pierwszym module **CodersCamp2020**
 
 ### W projekcie wykorzystałem:
+
 - Box-model
 - Kaskadowość CSS
 - Selektory CSS
@@ -23,13 +25,15 @@ Celem projektu jest prezentacja umiejętności w pisaniu kodu html oraz CSS po p
 - Wizytówka została przygotowana zgodnie z zasadami Responsive Web Design
 
 ### Repozytorium
-W repozytorium znajdują się:
-* plik _index.html_
-* folder _style_ zawierający plik _style.css_
-* folder _img_ zawierający zdjęcia wyświetlane na dużych rozdzielczościach oraz podfolder _mobile_ zawierający zdjęcia wyświetlane na urządzeniach mobilnych. __Przełącznie pomiędzy zdjęciami odbywa się w ramach *Media Querries*__
-Zdjęcia w formacie _.jpg_ pobrane ze strony _https://pixabay.com/pl/_
 
+W repozytorium znajdują się:
+
+- plik _index.html_
+- folder _style_ zawierający plik _style.css_
+- folder _img_ zawierający zdjęcia wyświetlane na dużych rozdzielczościach oraz podfolder _mobile_ zawierający zdjęcia wyświetlane na urządzeniach mobilnych. **Przełącznie pomiędzy zdjęciami odbywa się w ramach _Media Querries_**
+  Zdjęcia w formacie _.jpg_ pobrane ze strony _https://pixabay.com/pl/_
 
 ### Podgląd trybu jasnego oraz ciemnego
+
 ![Tryb Jasny](./githubImages/light_mode.jpeg)
 ![Tryb Jasny](./githubImages/dark_mode.jpeg)
